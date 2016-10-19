@@ -16,7 +16,7 @@ This gem takes your terraform outputs and imports them into ruby.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tfoutput'
+gem 'tfoutputs'
 ```
 
 And then execute:
@@ -25,7 +25,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tfoutput
+    $ gem install tfoutputs
 
 ## Usage
 
