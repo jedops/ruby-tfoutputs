@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['admin@jaetech.org']
 
   spec.summary       = 'Gem for grabbing variables from terraform'
-  spec.description   = 'it does stuff'
+  spec.description   = 'Sometimes we want to use the outputs of terraform in our ruby code for generating dashboard etc.. This gem enables this'
   spec.homepage      = 'https://jaetech.org'
   spec.license       = 'MIT'
 
