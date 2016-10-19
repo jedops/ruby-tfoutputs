@@ -1,8 +1,6 @@
 module TfOutputs
   module Configurator
     class FileStateConfiguration
-      attr_accessor :file_paths
-
       def initialize(options)
         @options = options
       end
