@@ -7,7 +7,7 @@ describe 'state reader' do
   end
   it 'should just bloody work' do
     VCR.use_cassette('e2e-test-single-hash') do
-      sc = TfOutput.configure(@config)
+      sc = TfOutputs.configure(@config)
       expect(sc.cf_size).to eq('tiny')
     end
   end
@@ -21,7 +21,7 @@ describe 'state reader' do
                                     bucket_region: 'eu-west-1', bucket_key: 'terraform.tfstate' } },
         { backend: 'file', options: { file_path: tf_state } }
       ]
-      sc = TfOutput.configure(config_array)
+      sc = TfOutputs.configure(config_array)
       expect(sc.cf_size).to eq('tiny')
       expect(sc.services_z2_count_2).to eq('it works')
     end

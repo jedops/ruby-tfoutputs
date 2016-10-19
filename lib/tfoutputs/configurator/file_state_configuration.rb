@@ -1,4 +1,4 @@
-module TfOutput
+module TfOutputs
   module Configurator
     class FileStateConfiguration
       attr_accessor :file_paths

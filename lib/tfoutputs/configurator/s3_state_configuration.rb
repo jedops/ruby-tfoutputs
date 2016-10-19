@@ -1,7 +1,7 @@
 require 'aws-sdk'
 require 'tempfile'
 
-module TfOutput
+module TfOutputs
   module Configurator
     class S3StateConfiguration
       :attr_accessor

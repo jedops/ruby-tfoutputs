@@ -4,8 +4,8 @@ describe 'state reader' do
   before(:each) do
     cwd = File.expand_path(File.dirname(__FILE__))
     @tf_state = "#{cwd}/resources/terraform.tfstate"
-    @sc = TfOutput::Configurator::StateConfigurator.new([{backend: 'file', options: {file_path: @tf_state } },
-                                                         { backend: 's3', options: { bucket_name: 'bucket-for-tf-configuration-tests',
+    @sc = TfOutputs::Configurator::StateConfigurator.new([{backend: 'file', options: {file_path: @tf_state } },
+                                                          { backend: 's3', options: { bucket_name: 'bucket-for-tf-configuration-tests',
                                                                                          bucket_region: 'eu-west-1', bucket_key: 'this-is-a-test.json' } }])
   end
   it 'should return file list with options' do

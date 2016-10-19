@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'tfoutput/configurator/version'
+require 'tfoutputs/configurator/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'tfoutput'
-  spec.version       = TfOutput::Configurator::VERSION
+  spec.name          = 'tfoutputs'
+  spec.version       = TfOutputs::Configurator::VERSION
   spec.authors       = ['James Edwards']
   spec.email         = ['admin@jaetech.org']
 

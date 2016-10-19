@@ -1,6 +1,6 @@
 require 'json'
 
-module TfOutput
+module TfOutputs
   module Configurator
     class StateReader
       attr_accessor :file_paths, :outputs
