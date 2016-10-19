@@ -1,7 +1,7 @@
 require 'bundler/gem_tasks'
 require 'rake'
 require 'rspec/core/rake_task'
-require 'TfOutput/tooling/vcr_redacter'
+require 'tfoutput/tooling/vcr_redacter'
 
 RSpec::Core::RakeTask.new(:spec) do |t|
   t.pattern = Dir.glob('spec/**/*_spec.rb')
