@@ -9,7 +9,7 @@
 
 # Ruby TF Outputs
 
-This gem takes your terraform outputs and imports them into ruby. 
+This gem is a ruby interface to access your terraform outputs.
 
 ## Installation
 
