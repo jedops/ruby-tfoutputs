@@ -34,9 +34,8 @@ http_interactions:
       - AmazonS3
     body:
       encoding: UTF-8
-      string: 'word up
-
-'
+      string: |
+        word up
     http_version: 
   recorded_at: Wed, 19 Oct 2016 15:41:09 GMT
 recorded_with: VCR 3.0.3

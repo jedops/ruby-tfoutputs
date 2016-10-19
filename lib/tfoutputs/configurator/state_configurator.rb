@@ -13,6 +13,7 @@ module TfOutputs
       def initialize(states_array)
         @states_array = states_array
       end
+
       def file_list
         file_list = []
         @states_array.each do |state_hash|

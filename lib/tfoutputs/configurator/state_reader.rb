@@ -41,7 +41,7 @@ module TfOutputs
           return output[name.to_s]['value']
         end
         super(name, *args, &block)
+      end
     end
-  end
   end
 end
