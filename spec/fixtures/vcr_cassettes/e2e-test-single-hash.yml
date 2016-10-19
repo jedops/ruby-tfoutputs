@@ -1,0 +1,239 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bucket-for-tf-configuration-tests.s3-eu-west-1.amazonaws.com/terraform.tfstate
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - redacted
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - Vl8JwRaAyXrgKEt2cNLU4rIv2+bm9y3nWA0vOBnWHjiws+CAvpilgABkzJO7adHbNbrNwQEzPrs=
+      X-Amz-Request-Id:
+      - DA737492309DBDAE
+      Date:
+      - Wed, 19 Oct 2016 15:47:23 GMT
+      Last-Modified:
+      - Wed, 19 Oct 2016 15:44:53 GMT
+      Etag:
+      - '"80215e4ab2c7b004bfb6b74d303491e0"'
+      Accept-Ranges:
+      - bytes
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '6305'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |+
+        {
+            "version": 3,
+            "terraform_version": "0.7.0",
+            "serial": 9,
+            "lineage": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaa",
+            "modules": [
+                {
+                    "path": [
+                        "root"
+                    ],
+                    "outputs": {
+                        "allowed_ips": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "10.5.1.6/32"
+                        },
+                        "api_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "medium"
+                        },
+                        "api_z1_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "1"
+                        },
+                        "api_z2_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "0"
+                        },
+                        "aws_region": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "eu-west-1"
+                        },
+                        "backbone_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "large"
+                        },
+                        "backbone_z1_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "1"
+                        },
+                        "backbone_z2_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "0"
+                        },
+                        "cf_admin_pass": {
+                            "sensitive": true,
+                            "type": "string",
+                            "value": "notarealpass"
+                        },
+                        "cf_apps_subdomain": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "apps"
+                        },
+                        "cf_boshworkspace_version": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "v1.2.0"
+                        },
+                        "cf_domain": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "XIP"
+                        },
+                        "cf_release_version": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "222"
+                        },
+                        "cf_run_subdomain": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "run"
+                        },
+                        "cf_size": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "tiny"
+                        },
+                        "data_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "large"
+                        },
+                        "debug": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "false"
+                        },
+                        "health_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "medium"
+                        },
+                        "health_z1_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "1"
+                        },
+                        "health_z2_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "0"
+                        },
+                        "install_docker_services": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "false"
+                        },
+                        "install_logsearch": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "false"
+                        },
+                        "ipmask": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "10.10"
+                        },
+                        "private_cf_domains": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": ""
+                        },
+                        "private_haproxy_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "small"
+                        },
+                        "public_haproxy_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "small"
+                        },
+                        "runner_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "runner"
+                        },
+                        "runner_z1_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "1"
+                        },
+                        "runner_z2_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "0"
+                        },
+                        "services_resource_pool": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "medium"
+                        },
+                        "services_z1_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "1"
+                        },
+                        "services_z2_count": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "0"
+                        }
+                    },
+                    "resources": {}
+                },
+                {
+                    "path": [
+                        "root",
+                        "cf-net"
+                    ],
+                    "outputs": {
+                        "aws_subnet_lb_availability_zone": {
+                            "sensitive": false,
+                            "type": "string",
+                            "value": "eu-west-1a"
+                        }
+                    },
+                    "resources": {}
+                },
+                {
+                    "path": [
+                        "root",
+                        "vpc"
+                    ],
+                    "outputs": {},
+                    "resources": {}
+                }
+            ]
+        }
+
+    http_version: 
+  recorded_at: Wed, 19 Oct 2016 15:47:22 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bucket-for-tf-configuration-tests.s3-eu-west-1.amazonaws.com/this-is-a-test.json
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - redacted
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - MrHYLMeEocFJJ6kMWyjqF5qhvQaWz1UMQHEvXWwoxXkZMsmxGRe7agkOogVuAfur7aSHxOA9KGE=
+      X-Amz-Request-Id:
+      - 08300829AE086B79
+      Date:
+      - Wed, 19 Oct 2016 15:41:10 GMT
+      Last-Modified:
+      - Wed, 19 Oct 2016 09:48:57 GMT
+      Etag:
+      - '"ee63cdd60f81652cb274eaa70f38fb7b"'
+      Accept-Ranges:
+      - bytes
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '8'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: 'word up
+
+'
+    http_version: 
+  recorded_at: Wed, 19 Oct 2016 15:41:09 GMT
+recorded_with: VCR 3.0.3
