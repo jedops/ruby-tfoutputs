@@ -1,15 +1,22 @@
-# Tf::Configurator
+```
+    ____        __             ____________     ____        __              __      
+   / __ \__  __/ /_  __  __   /_  __/ ____/    / __ \__  __/ /_____  __  __/ /______
+  / /_/ / / / / __ \/ / / /    / / / /_       / / / / / / / __/ __ \/ / / / __/ ___/
+ / _, _/ /_/ / /_/ / /_/ /    / / / __/      / /_/ / /_/ / /_/ /_/ / /_/ / /_(__  ) 
+/_/ |_|\__,_/_.___/\__, /    /_/ /_/         \____/\__,_/\__/ .___/\__,_/\__/____/  
+                  /____/                                   /_/                      
+```
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tf/configurator`. To experiment with that code, run `bin/console` for an interactive prompt.
+# Ruby TF Outputs
 
-TODO: Delete this and the text above, and describe your gem
+This gem takes your terraform outputs and imports them into ruby. 
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tf-configurator'
+gem 'tfoutput'
 ```
 
 And then execute:
@@ -18,21 +25,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tf-configurator
+    $ gem install tfoutput
 
 ## Usage
 
 TODO: Write usage instructions here
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tf-configurator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jae2/ruby-tfoutput. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
