@@ -24,7 +24,6 @@ module TfOutputs
       end
 
       protected
-
       def parse_outputs(tf_module)
         if tf_module['path'] == ['root']
           tf_module['outputs'].collect do |k, v|
@@ -34,7 +33,16 @@ module TfOutputs
         end
       end
 
+      def respond_to? (method, include_private = false)
+        outputs.each do |output|
+          next unless output.keys[0] == method.to_s
+          return true
+        end
+        super
+      end
+
       def method_missing(name, *args, &block)
+        #  Hack - really we should call respond_to?
         outputs.each do |output|
           next unless output.keys[0] == name.to_s
           return 'sensitive' if output[name.to_s]['sensitive']
