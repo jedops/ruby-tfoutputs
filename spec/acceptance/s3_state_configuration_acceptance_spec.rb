@@ -2,7 +2,7 @@ require 'spec_helper_acceptance'
 
 describe 'state reader' do
   before(:each) do
-    @s3_state_configuration = TfOutputs::Configurator::S3StateConfiguration.new(bucket_name: 'bucket-for-tf-configuration-tests',
+    @s3_state_configuration = TfOutputs::Configurator::Backends::S3StateConfiguration.new(bucket_name: 'bucket-for-tf-configuration-tests',
                                                                                 bucket_region: 'eu-west-1',
                                                                                 bucket_key: 'this-is-a-test.json')
   end

@@ -19,7 +19,7 @@ module TfOutputs
         @states_array.each do |state_hash|
           backend_name = state_hash[:backend]
           class_name = BACKENDS[backend_name.to_sym]
-          clazz = Object.const_get("TfOutputs::Configurator::#{class_name}")
+          clazz = Object.const_get("TfOutputs::Configurator::Backends::#{class_name}")
           state = clazz.new (state_hash[:options])
           file_list.push(state.save)
         end
