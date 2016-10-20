@@ -1,14 +1,14 @@
-require 'active_support/inflector'
-
 module TfOutputs
   module Configurator
     class StateConfigurator
       attr_accessor :state_uris
 
-      BACKENDS = { s3: 's3_state_configuration',
-                   file: 'file_state_configuration' }.freeze
+      BACKENDS = { s3: 'S3StateConfiguration',
+                   file: 'FileStateConfiguration' }.freeze
 
-      BACKENDS.each { |_backend, filename| require "tfoutputs/configurator/#{filename}" }
+      Dir.glob("tfoutputs/configurator/backends/*").each do |filename|
+        require "tfoutputs/configurator/backends/#{File.basename(filename)}"
+      end
 
       def initialize(states_array)
         @states_array = states_array
@@ -19,7 +19,7 @@ module TfOutputs
         @states_array.each do |state_hash|
           backend_name = state_hash[:backend]
           class_name = BACKENDS[backend_name.to_sym]
-          clazz = Object.const_get("TfOutputs::Configurator::#{class_name.camelize}")
+          clazz = Object.const_get("TfOutputs::Configurator::#{class_name}")
           state = clazz.new (state_hash[:options])
           file_list.push(state.save)
         end

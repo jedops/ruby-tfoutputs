@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/tfoutputs/configurator/s3_state_configuration'
+require_relative '../lib/tfoutputs/configurator/backends/s3_state_configuration'
 require 'webmock/rspec'
 require 'vcr'
 require 'tfoutputs'
