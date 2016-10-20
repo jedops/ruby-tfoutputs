@@ -6,7 +6,7 @@
 /_/ |_|\__,_/_.___/\__, /    /_/ /_/         \____/\__,_/\__/ .___/\__,_/\__/____/  
                   /____/                                   /_/                      
 ```
-![build status on master](https://travis-ci.org/jae2/ruby-tfoutputs.svg?branch=master)
+![build status on master](https://travis-ci.org/jae2/ruby-tfoutputs.svg?branch=master)   [![Gem Version](https://badge.fury.io/rb/tfoutputs.svg)](https://badge.fury.io/rb/tfoutputs)
 
 
 # Ruby TF Outputs
