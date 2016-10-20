@@ -1,5 +1,5 @@
 require 'rspec'
 require_relative '../lib/tfoutputs/configurator/state_reader'
 require_relative '../lib/tfoutputs/configurator/state_configurator'
-require_relative '../lib/tfoutputs/configurator/s3_state_configuration'
-require_relative '../lib/tfoutputs/configurator/file_state_configuration'
+require_relative '../lib/tfoutputs/configurator/backends/s3_state_configuration'
+require_relative '../lib/tfoutputs/configurator/backends/file_state_configuration'
