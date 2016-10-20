@@ -2,6 +2,6 @@ language: ruby
 rvm:
   - 2.2.2
   - 2.3.0
-script: AWS_ACCESS_KEY_ID=dummy AWS_SECRET_ACCESS_KEY=dummy bundle exec rake spec
+script: bundle exec rake spec
 env:
   - AWS_ACCESS_KEY=foo AWS_SECRET_ACCESS_KEY=bar
