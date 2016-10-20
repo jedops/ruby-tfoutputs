@@ -11,6 +11,11 @@ describe 'state reader' do
     expected = { 'allowed_ips' => { 'sensitive' => false, 'type' => 'string', 'value' => '10.5.1.6/32' } }
     expect(sr.outputs).to include(expected)
   end
+
+  it 'respond_to should work' do
+    sr = TfOutputs::Configurator::StateReader.new(@tf_state => false)
+    expect(sr.send(:respond_to?, :allowed_ips)).to eq(true)
+  end
   it 'method missing should work' do
     sr = TfOutputs::Configurator::StateReader.new(@tf_state => false)
     expect(sr.allowed_ips).to eq('10.5.1.6/32')
