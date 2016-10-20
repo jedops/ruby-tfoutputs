@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Gem for grabbing variables from terraform'
   spec.description   = 'Sometimes we want to use the outputs of terraform in our ruby code for generating dashboard etc.. This gem enables this'
-  spec.homepage      = 'https://jaetech.org'
+  spec.homepage      = 'https://github.com/jae2/ruby-tfoutputs'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|fixtures)/}) }
