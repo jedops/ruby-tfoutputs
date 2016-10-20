@@ -6,8 +6,8 @@ module TfOutputs
       BACKENDS = { s3: 'S3StateConfiguration',
                    file: 'FileStateConfiguration' }.freeze
 
-      Dir.glob("tfoutputs/configurator/backends/*").each do |filename|
-        require "tfoutputs/configurator/backends/#{File.basename(filename)}"
+      Dir.glob("#{File.dirname(__FILE__)}/backends/*").each do |filename|
+        require_relative "backends/#{File.basename(filename)}"
       end
 
       def initialize(states_array)
