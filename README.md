@@ -87,6 +87,8 @@ state_reader = TfOutputs.configure(config)
 puts(state_reader.my_output_name)
 ```
 
+[Blog post on tfoutputs](http://jaetech.org/terraform-outputs-in-ruby/)
+
 
 ## Contributing
 
