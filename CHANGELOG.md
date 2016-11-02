@@ -1,3 +1,6 @@
+## Version 0.2.2
+This release includes:
+- make :respond_to? public: [PR #4](https://github.com/jae2/ruby-tfoutputs/pull/5) - Thanks [@patdowney](https://github.com/patdowney)
 
 ## Version 0.2.1
 This release includes:
