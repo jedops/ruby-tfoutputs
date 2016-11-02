@@ -12,8 +12,15 @@ module TfOutputs
         self
       end
 
-      protected
+      def respond_to? (method, include_private = false)
+        outputs.each do |output|
+          next unless output.keys[0] == method.to_s
+          return true
+        end
+        super
+      end
 
+      protected
       def get_outputs_from_file
         @file_paths.each do |path, _use_sensitive|
           parser = JSON.parse(File.read(path))
@@ -31,14 +38,6 @@ module TfOutputs
             @outputs.push(k => v)
           end
         end
-      end
-
-      def respond_to? (method, include_private = false)
-        outputs.each do |output|
-          next unless output.keys[0] == method.to_s
-          return true
-        end
-        super
       end
 
       def method_missing(name, *args, &block)
