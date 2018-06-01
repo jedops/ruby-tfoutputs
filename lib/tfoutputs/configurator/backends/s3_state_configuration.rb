@@ -19,7 +19,7 @@ module TfOutputs
           # Setup the base client config which must always have a bucket region
           client_config = {region: @bucket_region}
           # if a profile was supplied, then add that to the client config
-          if @profile != nil
+          if !@profile.nil?
             client_config[:profile] = @profile
           end
 
