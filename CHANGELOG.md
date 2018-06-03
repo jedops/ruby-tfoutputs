@@ -1,6 +1,11 @@
+## Version 0.2.3
+This release includes:
+- AWS Credential profile support : [PR #7](https://github.com/jedops/ruby-tfoutputs/pull/7) - Thanks [@steakfest](https://github.com/steakfest)
+
+
 ## Version 0.2.2
 This release includes:
-- make :respond_to? public: [PR #4](https://github.com/jae2/ruby-tfoutputs/pull/5) - Thanks [@patdowney](https://github.com/patdowney)
+- make :respond_to? public: [PR #5](https://github.com/jae2/ruby-tfoutputs/pull/5) - Thanks [@patdowney](https://github.com/patdowney)
 
 ## Version 0.2.1
 This release includes:
