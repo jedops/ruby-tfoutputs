@@ -58,13 +58,9 @@ config = {:backend => 's3',:options => {:bucket_name => 'my-bucket-name-goes-her
 state_reader = TfOutputs.configure(config)
 puts(state_reader.my_output_name)
          
-```
-Gives us:
+S3 backends also have the following optional parameters:
 
-```
-it works
-
-```
+**profile** - The AWS Credential profile to use.
 
 Setting up a file backend:
 ```ruby
