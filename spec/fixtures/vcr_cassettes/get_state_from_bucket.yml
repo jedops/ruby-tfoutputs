@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: https://bucket-for-tf-configuration-tests.s3-eu-west-1.amazonaws.com/this-is-a-test.json
+    uri: https://bucket-for-tf-configuration-tests.s3.eu-west-1.amazonaws.com/this-is-a-test.json
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: ''
     headers:
       Authorization:
@@ -15,11 +15,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - 45YP9pujG3XNQfH1lR247Jr7YEREnbzsXyw0cVrZzNfsQQvEF5sKM31KR6E8nB8bQ/WGGyhQZ74=
+      - ICBsP49GKYO3rPfnbMSE5t22LbV1fZWj6jHHdH1++5EDH93x74k4MhgnFKn16bqQMUYo7nINqFI=
       X-Amz-Request-Id:
-      - 72309904C4BFDFA7
+      - F67B549049FD1BCD
       Date:
-      - Wed, 19 Oct 2016 15:41:10 GMT
+      - Sun, 03 Jun 2018 14:24:43 GMT
       Last-Modified:
       - Wed, 19 Oct 2016 09:48:57 GMT
       Etag:
@@ -34,8 +34,9 @@ http_interactions:
       - AmazonS3
     body:
       encoding: UTF-8
-      string: |
-        word up
+      string: 'word up
+
+'
     http_version: 
-  recorded_at: Wed, 19 Oct 2016 15:41:09 GMT
+  recorded_at: Sun, 03 Jun 2018 14:24:42 GMT
 recorded_with: VCR 3.0.3

@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: https://bucket-for-tf-configuration-tests.s3-eu-west-1.amazonaws.com/terraform.tfstate
+    uri: https://bucket-for-tf-configuration-tests.s3.eu-west-1.amazonaws.com/terraform.tfstate
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: ''
     headers:
       Authorization:
@@ -15,11 +15,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - Vl8JwRaAyXrgKEt2cNLU4rIv2+bm9y3nWA0vOBnWHjiws+CAvpilgABkzJO7adHbNbrNwQEzPrs=
+      - RhXJrdGxLIsaV1ll/huvVXAaUFVufGuwpujIi8EX53qSOMcZrAwplcffkTe983SzJvxV0a1m/u4=
       X-Amz-Request-Id:
-      - DA737492309DBDAE
+      - 73721165DDDF911D
       Date:
-      - Wed, 19 Oct 2016 15:47:23 GMT
+      - Sun, 03 Jun 2018 14:24:44 GMT
       Last-Modified:
       - Wed, 19 Oct 2016 15:44:53 GMT
       Etag:
@@ -235,5 +235,5 @@ http_interactions:
         }
 
     http_version: 
-  recorded_at: Wed, 19 Oct 2016 15:47:22 GMT
+  recorded_at: Sun, 03 Jun 2018 14:24:43 GMT
 recorded_with: VCR 3.0.3
