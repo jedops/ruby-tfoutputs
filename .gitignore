@@ -13,3 +13,4 @@ bin/
 binaries/
 vendor/
 .ruby_version
+.ruby-version
